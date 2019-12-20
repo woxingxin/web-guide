@@ -306,4 +306,4 @@ style/color.scss 文件
 
 - **版本**
 
-采用 semver (语义化版本)。请参考[版本管理](/guide/release.html#版本管理)
+采用 semver (语义化版本)。请参考[版本管理](./release.md)

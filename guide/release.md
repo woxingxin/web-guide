@@ -15,8 +15,6 @@
   - **hotfix：** 修复 master 上的问题, 等不及 release 版本就必须马上上线. 基于 `master`, 完成后 merge 回 master 和 develop
 :::
 
-![An image](../static/img/gitflow.png)
-
 ::: warning 注意
   - 分支的命名空间用 [pathCase](/guide/denominate.html#pathcase)，如 `feature/style`、 `release/1.2.0`、 `hotfix/1.3.1`
   - 每次发布时 Git 必须打 Tag

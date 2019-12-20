@@ -171,25 +171,6 @@ HTML 属性应该按照特定的顺序出现以保证易读性.
 -  十六进制值应该全部小写，如果色值的六个数字一样，那么写3个就好，因为在扫描文档时，小写字符易于分辨，因为他们的形式更易于区分。例如，用 `#fff` 代替 `#ffffff`。
 - 避免为 0 值指定单位，例如，用 `margin: 0`; 代替 `margin: 0px`。
 
-```css
-/* Good CSS */
-.search-form-input ,
-.search-form-input[type="text"] {
-  padding: 15px;
-  margin-bottom: 15px;
-  background-color: rgba(0,0,0,.5);
-  box-shadow: 0 1px 2px #ccc, inset 0 1px 0 #fff;
-}
-
-/* Bad CSS */
-.search-form-input,.search-form-input[type="text"]{
-  padding:15px;
-  margin:0px 0px 15px;
-  background-color:rgba(0, 0, 0, 0.5);
-  box-shadow:0px 1px 2px #CCC,inset 0 1px 0 #FFFFFF
-}
-```
-
 -  不要设置太大的z-index，原则上业务逻辑代码的z-index应该保持在个位数（除非是需要覆盖公共样式）例如：`z-index: 3`。
 
 -  **慎用** `!important`,important用来覆盖属性，特别是在CSS里面用来覆盖style里的属性。但是important还是少用为妙，如果要覆盖还是先通过增加选择器权重的方式。
@@ -445,7 +426,9 @@ function mergeCells(grid: Ext.Grid.Panel, cols: Number[], isAllSome: boolean = f
   // Do Something
 }
 ```
+
 常用注释关键字：(只列出一部分，并不是全部)
+
 注释名|	语法|	含义|	示例
 -|-|-|-
 @param|	@param 参数名 {参数类型} 描述信息	|描述参数的信息	|@param name {String} 传入名称
@@ -509,9 +492,6 @@ function mergeCells(grid: Ext.Grid.Panel, cols: Number[], isAllSome: boolean = f
   }
 </script>
 
-<!-- 样式 -->
-<style lang="scss">
-</style>
 ```
 
 - 多个特性的元素，每个特性应该单独一行。[详情](https://cn.vuejs.org/v2/style-guide/index.html#%E5%A4%9A%E4%B8%AA%E7%89%B9%E6%80%A7%E7%9A%84%E5%85%83%E7%B4%A0-%E5%BC%BA%E7%83%88%E6%8E%A8%E8%8D%90)
